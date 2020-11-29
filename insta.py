@@ -38,11 +38,6 @@ class InstagramBot:
 		bot.get('https://www.instagram.com/explore/tags/' + hashtag)
  
 
-		# like amount doesnt work, only likes 1 
-		#todo: fix likes, run it as batch with .bat file
-		#post yourself?
-		#if the post is liked then dont unlike it with if and else statement
-		#try python deubugging mate?
 		
 	def likePhotos(self,amount):
 		bot = self.bot
@@ -65,7 +60,7 @@ class InstagramBot:
 		
 			#bot.get('https://instagram.com/'+ self.username)
 
-insta = InstagramBot('stronggympeoples', 'Arnold6969')
+insta = InstagramBot('enter insta username here', 'enter your password here')
 insta.login()
-insta.searchHashtag('gym')
-insta.likePhotos(200)
+insta.searchHashtag('gym')# hashtag  want to search
+insta.likePhotos(200) # amount of likes 
